@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction Form</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+<body>
+    <h1>Diabetes Prediction System</h1>>
+    <div class="diabetes">
+                <h2>Please enter the following information:</h2>
+
+    <form action="/predict" method="post" id="diabetes">
+        <label>Pregnancies :</label><br>
+        <input type="text" name="pregs" id="name" placeholder="Enter your number of pregnancies"><br><br>
+
+        <label>Glucose :</label><br>
+        <input type="text" name="glucose" id="name" placeholder="Enter your Glucose level"><br><br>
+
+        <label>BloodPressure :</label><br>
+        <input type="text" name="bp" id="name" placeholder="Enter your BloodPressure level"><br><br>
+
+        <label>SkinThickness :</label><br>
+        <input type="text" name="skt" id="name" placeholder="Enter your SkinThickness level"><br><br>
+
+        <label>Insulin :</label><br>
+        <input type="text" name="insulin" id="name" placeholder="Enter your Insulin level"><br><br>
+
+        <label>BMI :</label><br>
+        <input type="text" name="bmi" id="name" placeholder="Enter your BMI level"><br><br>
+
+        <label>DiabetesPedigreeFunction :</label><br>
+        <input type="text" name="dpf" id="name" placeholder="Enter your DiabetesPedigreeFunction"><br><br>
+
+        <label>Age :</label><br>
+        <input type="text" name="age" id="name" placeholder="Enter your Age"><br><br>
+
+        <input type="submit" value="Predict" id="submit">
+
+
+
+    </form></div>
+
+</body>
+</html>
